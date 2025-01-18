@@ -1,0 +1,41 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore dependency directories
+vendor/
+
+# Ignore temporary files
+*.swp
+*.swo
+*.bak
+
+# Ignore sensitive files (you may need to adjust the list for your project)
+.env
+config.php
+
+# Ignore compiled files
+*.class
+*.o
+*.pyc
+*.pyo
+
+# Ignore IDE and editor-specific files (you can add your IDE here)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore uploads and temporary directories
+uploads/
+tmp/
+
+# Ignore compiled CSS/JS if using preprocessors
+public/css/
+public/js/

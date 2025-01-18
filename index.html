@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bima Insurances - Claims Submission Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Bima Insurances Portal</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#submit-claim">Submit Claim</a></li>
+                <li><a href="#track-claim">Track Claim</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+       <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h1>Welcome to Bima Insurances Claims Portal</h1>
+            <p>Your trusted partner in insurance claims management. Quickly submit, track, or manage your claims.</p>
+        </section>
+
+        <!-- Submit Claim Section -->
+        <section id="submit-claim" class="form-section">
+            <h1>Submit Your Claim</h1>
+            <form id="claim-form" action="submit_claim.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="claimant-name">Your Name</label>
+                    <input type="text" id="claimant-name" name="claimant-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="claim-id">Claim ID</label>
+                    <input type="text" id="claim-id" name="claim-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="claim-type">Claim Type</label>
+                    <select id="claim-type" name="claim-type" required>
+                        <option value="health">Health</option>
+                        <option value="auto">Auto</option>
+                        <option value="property">Property</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="claim-description">Claim Description</label>
+                    <textarea id="claim-description" name="claim-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="claim-amount">Claim Amount</label>
+                    <input type="number" id="claim-amount" name="claim-amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="documents">Upload Supporting Documents</label>
+                    <input type="file" id="documents" name="documents" multiple>
+                </div>
+                <button type="submit">Submit Claim</button>
+            </form>
+        </section>
+
+        <!-- Track Claim Section -->
+        <section id="track-claim" class="info-section">
+            <h2>Track Your Claim</h2>
+            <p>Enter your claim ID to check the status of your claim.</p>
+            <input type="text" placeholder="Claim ID" id="track-claim-id">
+            <button onclick="trackClaim()">Track Claim</button>
+            <div id="claim-status"></div>
+        </section>
+        
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h1>Welcome to Bima Insurances Claims Portal</h1>
+            <p>Your trusted partner in insurance claims management. Quickly submit, track, or manage your claims.</p>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="info-section">
+            <h2>About Us</h2>
+            <p>Bima Insurances has been a leader in the insurance industry, providing trusted services and dedicated support to clients worldwide. Our mission is to simplify the insurance process and ensure peace of mind for our customers.</p>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chat" class="info-section">
+            <h2>Chat with Us</h2>
+            <div id="chat-box">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="send-chat">Send</button>
+            </div>
+        </section>
+
+       <!-- Profile Section
+         - Registration Form -->
+<section id="profile" class="form-section">
+    <h2>User Registration</h2>
+    <form action="register.php" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+    <!-- Login Form -->
+<section id="login" class="form-section">
+    <h2>User Login</h2>
+    <form action="login.php" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+    <!-- Social Login -->
+    <div class="social-login">
+        <p>Or sign in with:</p>
+        <button class="google-login">Google</button>
+        <button class="apple-login">Apple</button>
+        <button class="facebook-login">Facebook</button>
+    </div>
+
+
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+    <a href="register.php">Register</a>
+    <a href="login.php">Login</a>
+    <a href="dashboard.php">Dashboard</a>
+    <a href="logout.php">Logout</a>
+</nav>
+
+        
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="form-section">
+            <h2>Feedback</h2>
+            <form id="feedback-form" action="feedback.php" method="POST">
+                <div class="form-group">
+                    <label for="feedback-text">Your Feedback</label>
+                    <textarea id="feedback-text" name="feedback-text" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <form action="logout.php" method="POST">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+<!-- Contact Section -->
+<section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, please don't hesitate to contact us.</p>
+    <ul>
+        <li>Email: <a href="mailto:support@bima-insurances.com">support@bima-insurances.com</a></li>
+        <li>Phone: <a href="tel:+254716012357">+254716012357</a></li>
+        <li>Address: Bima Insurances, Nairobi, Kenya</li>
+    </ul>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 Bima Insurances. All rights reserved.</p>
+    </footer>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="#home" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            Home
+        </a>
+        <a href="#about-us" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            About Us
+        </a>
+        <a href="#feedback" class="nav-link add-feedback">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                <path d="M13 11h8v2h-8v8h-2v-8H3v-2h8V3h2v8z"/>
+            </svg>
+        </a>
+        <a href="#chat" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v14l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6V9h12v3zm0-4H6V5h12v3z"/>
+            </svg>
+            Message Us
+        </a>
+        <a href="#profile" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            Profile
+        </a>
+    </div>
+    <script>
+    function trackClaim() {
+        const claimId = document.getElementById("track-claim-id").value;
+    
+        if (!claimId) {
+            alert("Please enter a claim ID.");
+            return;
+        }
+    
+        // Send AJAX request to the PHP script
+        fetch("track_claim.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `claim-id=${encodeURIComponent(claimId)}`,
+        })
+            .then((response) => response.text())
+            .then((data) => {
+                const claimStatusElement = document.getElementById("claim-status");
+                claimStatusElement.innerHTML = data;
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                alert("An error occurred while processing your request.");
+            });
+    }
+    </script>
+</body>
+</html>

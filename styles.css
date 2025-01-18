@@ -1,0 +1,499 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li.profile a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul li.profile a:hover {
+    color: #f4f4f9;
+}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Form Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Section */
+.profile-info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.profile-actions a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.profile-actions a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Home Section */
+.home-section {
+    padding: 50px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2em;
+}
+
+/* Form Section */
+.form-section {
+    padding: 50px 20px;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Track Claim Section */
+.info-section {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .social-media .social-icon {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .social-media .social-icon:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .form-section,
+    .info-section {
+        padding: 30px 15px;
+    }
+}
+  /* Bottom navigation bar styling */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    flex: 1;
+}
+
+.bottom-nav a:hover {
+    background-color: #e9ecef;
+}
+
+.bottom-nav a.active {
+    color: #007bff;
+}
+
+.bottom-nav i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.bottom-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.bottom-nav .nav-link i {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bottom-nav .add-feedback {
+    background-color: white;
+    color: #007BFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    transform: translateY(-20%);
+}
+
+.bottom-nav .add-feedback i {
+    margin-bottom: 0;
+}
+
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #007BFF;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .bottom-nav .nav-link {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .bottom-nav .nav-link svg {
+        display: block;
+        margin: 0 auto 5px auto;
+    }
+
+    .bottom-nav .add-feedback {
+        background-color: white;
+        color: #007BFF;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        transform: translateY(-15%);
+    }
+    .form-section {
+        margin: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #007bff;
+        padding: 10px 0;
+    }
+    
+    .bottom-nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .bottom-nav a:hover {
+        text-decoration: underline;
+    }
+    .logout-button {
+        background-color: #f44336; /* Red */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .logout-button:hover {
+        background-color: #e53935;
+    }
+    
